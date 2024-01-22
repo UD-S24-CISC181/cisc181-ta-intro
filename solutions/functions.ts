@@ -26,3 +26,29 @@ function addNumbers(first: number, second: number, third: number): number {
 function isMultiple(num: number): boolean {
   return num % 3 === 0 || num % 7 === 0;
 }
+
+//loops
+
+/**
+ * Multiplies two numbers together using for loop addition
+ */
+
+function multiplicationLoop(x: number, y: number): number {
+  let product = 0;
+  for (let i = 0; i < y; i++) {
+    product += x;
+  }
+  return product;
+}
+
+/**
+ * Adds elements of an array using a for..of statement
+ * Read about iterators here: https://www.typescriptlang.org/docs/handbook/iterators-and-generators.html
+ */
+function sumArray(arr: number[]): number {
+  let sum = 0;
+  for (let num of arr) {
+    sum += num;
+  }
+  return sum;
+}
