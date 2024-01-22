@@ -52,3 +52,44 @@ function sumArray(arr: number[]): number {
   }
   return sum;
 }
+
+//arrays
+
+/**
+ * Filters out all failing grades from a list of grades, assume failing grade is anything below a 70
+ * Use the filter method to solve this problem!
+ */
+function filterPassingGrades(grades: number[]): number[] {
+  const passingGrades = grades.filter((grade: number) => grade >= 70);
+  return passingGrades;
+}
+
+/**
+ * Given a list of grades, adjust the grades if the last grade is less than 95.
+ * Return new array with an extra 5 points to the last grade in the array if the grades need to be adjusted.
+ * If the grades do not need to be adjusted, return a copy of the original array.
+ * Do not use a loop to solve this problem!
+ */
+function adjustGrades(grades: number[]): number[] {
+  let newGrades = [...grades];
+  return newGrades[newGrades.length - 1] < 95
+    ? newGrades.splice(
+        newGrades.length - 1,
+        1,
+        newGrades[newGrades.length - 1] + 5
+      )
+    : newGrades;
+}
+
+/**
+ * Consumes an array of colors (e.g., 'red', 'purple') and returns true if ALL
+ * the colors are either 'red', 'blue', or 'green'. If an empty list is given,
+ * then return true.
+ */
+function allRGB(colors: string[]): boolean {
+  const rgbcolors = colors.filter(
+    (color: string): boolean =>
+      color === "red" || color === "blue" || color === "green"
+  );
+  return colors.length === rgbcolors.length;
+}
