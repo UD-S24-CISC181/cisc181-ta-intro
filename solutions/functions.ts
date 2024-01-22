@@ -93,3 +93,32 @@ function allRGB(colors: string[]): boolean {
   );
   return colors.length === rgbcolors.length;
 }
+
+//strings
+
+/**
+ * Consumes a string and a keyword returns whether or not the string contains that word.
+ * If the string is empty, return null.
+ */
+function containsWord(str: string, keyword: string): boolean | null {
+  return str.length === 0 ? null : str.includes(keyword);
+}
+
+/**
+ * Given a string, return a new string where "not " has been added to the
+ * front. However, if the string already begins with "not", return the
+ * string unchanged.
+ */
+function notString(str: string): string {
+  return str.startsWith("not") ? str : "not " + str;
+}
+
+/**
+ * Given a string, return a new string where the first and last characters
+ * have been exchanged.
+ */
+function frontBack(str: string): string {
+  return str.length <= 1
+    ? str
+    : str.slice(-1) + str.slice(1, -1) + str.slice(0, 1);
+}
