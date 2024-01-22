@@ -14,6 +14,14 @@ There are other types, such as `null`, `undefined`, `enum`, and we will also get
 
 Don't use the `any` type :-)
 
+## Logging
+Logging is just "printing" data. You do this with `console.log`
+
+```typescript
+console.log("Hello World!");
+//you would see "Hello World!" in your developer console
+```
+
 ## Variables
 You can declare variables with `const` or `let` (there is also `var` but that is old, and although it's possible, don't use it)
 
@@ -63,16 +71,38 @@ It's a little more complicated than this, but you can read more about it (and th
 ### Interfaces
 [The TypeScript Interface cheat sheet is very helpful!](https://www.typescriptlang.org/static/TypeScript%20Interfaces-34f1ad12132fb463bd1dfe5b85c5b2e6.png)
 
-Interfaces are used to define the "shape" of objects. You define an object with a name, and attributes of the object with their respective types.
+Interfaces are used to define the "shape" of objects. You define an interface with a name, and attributes with their respective types:
 
 ```typescript
-interface 
+interface House{
+    floors: number;
+    color: string;
+    vacant: boolean;
+    residents: number;
+}
+```
+
+You then can create objects that fulfill the attributes listed above.
+```typescript
+const myHouse: House = {floors: 3, color: "brown", vacant: false, residents: 4};
+
+//to access these attributes like so:
+const myResidents: number = myHouse.residents;
 ```
 
 ### Classes
 [The TypeScript Class cheat sheet is very helpful!](https://www.typescriptlang.org/static/TypeScript%20Classes-83cc6f8e42ba2002d5e2c04221fa78f9.png)
 
-## Logging
+To declare classes, use the `class` keyword. You can create fields with properties of the class that you would like to include, with either just their types or with a value.
+
+```typescript
+class Car{
+    wheels: number = 4;
+    color: string;
+
+}
+
+```
 
 ## Equality
 
