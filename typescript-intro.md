@@ -56,6 +56,9 @@ myArray = [0, 1, 2, 3, 4];
 let anotherArray: Array<string> = ["cat", "dog", "wolf", "sheep", "horse"];
 ```
 
+## Functions
+
+
 ## Objects
 You can use interfaces or classes for objects.
 
@@ -96,17 +99,57 @@ const myResidents: number = myHouse.residents;
 To declare classes, use the `class` keyword. You can create fields with properties of the class that you would like to include, with either just their types or with a value.
 
 ```typescript
+//here, we are creating a class Car that has 4 wheels, and one of the attributes we will need to define is its color.
+class Car{
+    wheels: number = 4;
+    color: string;
+}
+```
+
+You can create a constructor of a class using `constructor`:
+
+```typescript
 class Car{
     wheels: number = 4;
     color: string;
 
+    constructor(color: string){
+        this.color = color;
+    }
 }
-
 ```
 
-## Equality
+Lastly, here is an example of a simple method that will log something.
 
-## Functions
+```typescript
+class Car{
+    wheels: number = 4;
+    color: string;
+
+    constructor(color: string){
+        this.color = color;
+    }
+    
+    horn(){
+        console.log("honk");
+    }
+}
+```
+
+With this class, I can instantiate it with `new` and use the method I created.
+
+```typescript
+//creating a car
+let newCar = new Car();
+
+//honking the horn
+newCar.horn();
+//"honk" would be logged.
+```
+
+Using these basics, you will be able to pick up use of classes in TypeScript. You are able to use inheritance, super calls, getters/setters, etc.
+
+## Equality
 
 ## 
 
