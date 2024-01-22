@@ -4,13 +4,13 @@ If this is your first experience with TS, you will definitely want to utilize ot
 
 ## What is TypeScript?
 
-## Types
+## Basic Types
 **The three primitive types:**
 - `string`: represents string values like `"Hello, world"`
 - `number`: there is no distinguished type for ints & floats in TypeScript, it is all represented as a `number`
 - `boolean`: `true` or `false`
 
-There are other types, such as `null` and `undefined`, and we will also get into object types below.
+There are other types, such as `null`, `undefined`, `enum`, and we will also get into object types below.
 
 Don't use the `any` type :-)
 
@@ -49,10 +49,28 @@ let anotherArray: Array<string> = ["cat", "dog", "wolf", "sheep", "horse"];
 ```
 
 ## Objects
+You can use interfaces or classes for objects.
+
+*What's the difference?*\
+In short: An interface doesn't have things like constructors & default values, and you do not instantiate them. You would use this to structure or outline data.
+In classes, you can set default values and create functions.
+
+It's a little more complicated than this, but you can read more about it (and the difference become more clear in examples).
+- [TypeScript Handbook on Interfaces & Classes](https://www.typescriptlang.org/docs/handbook/typescript-tooling-in-5-minutes.html#interfaces)
+- [Classes vs. Interfaces](https://passionfordev.com/typescript-classes-vs-interfaces/) - very detailed explanation with examples!
 
 
+### Interfaces
+[The TypeScript Interface cheat sheet is very helpful!](https://www.typescriptlang.org/static/TypeScript%20Interfaces-34f1ad12132fb463bd1dfe5b85c5b2e6.png)
 
-## Classes
+Interfaces are used to define the "shape" of objects. You define an object with a name, and attributes of the object with their respective types.
+
+```typescript
+interface 
+```
+
+### Classes
+[The TypeScript Class cheat sheet is very helpful!](https://www.typescriptlang.org/static/TypeScript%20Classes-83cc6f8e42ba2002d5e2c04221fa78f9.png)
 
 ## Logging
 
