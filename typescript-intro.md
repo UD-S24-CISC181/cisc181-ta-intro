@@ -112,7 +112,7 @@ function yesOrNo(sentence: string): boolean | null{
         return false;
     }
     else{
-        return true;
+        return null;
     }
 }
 ```
