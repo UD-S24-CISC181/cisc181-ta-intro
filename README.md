@@ -37,7 +37,7 @@ To get started...
 There are practice problems in this repository (in the `practice-problems` directory). Complete these problems, and write some of your own tests for them!\
 I have also written solutions to these practice problems (you guessed it, in the `solutions` directory) if you want to check your solutions.
 
-- I provided sample tests for the function in `objects.ts` in `objects.test.ts` in `solutions`
+- I provided sample tests for `objects.ts` in `solutions/objects.test.ts`
 - We will ask students to write their own unit tests! Get familiar with it.
   
 ## Extra Resources
