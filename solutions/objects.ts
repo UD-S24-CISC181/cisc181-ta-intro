@@ -9,7 +9,7 @@
  * lastName (a string)
  * age (a number)
  */
-interface Person {
+export interface Person {
   firstName: string;
   lastName: string;
   age: number;
@@ -31,7 +31,7 @@ let person1: Person = {
  * lollipops (a number)
  * owner (a Person)
  */
-interface CandyJar {
+export interface CandyJar {
   chocolates: number;
   gummies: number;
   lollipops: number;
@@ -41,6 +41,6 @@ interface CandyJar {
 /**
  * Create a function that takes in a CandyJar and returns the total number of candies in the jar.
  */
-function totalCandies(candyJar: CandyJar): number {
+export function totalCandies(candyJar: CandyJar): number {
   return candyJar.chocolates + candyJar.gummies + candyJar.lollipops;
 }

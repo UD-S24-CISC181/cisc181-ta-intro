@@ -30,7 +30,7 @@ function isMultiple(num: number): boolean {
 //loops
 
 /**
- * Multiplies two numbers together using for loop addition
+ * Multiplies two numbers together using a for loop
  */
 
 function multiplicationLoop(x: number, y: number): number {
