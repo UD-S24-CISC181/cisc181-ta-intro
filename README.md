@@ -7,6 +7,7 @@
 - [I'm Familiar with TypeScript](#im-familiar-with-typescript)
 - [Practice Problems](#practice-problems)
 - [Extra Resources](#extra-resources)
+- [WebEZ Guide](./webez-guide.md)
 
 ## Environment Set-Up
 There are a few things you need to have installed and set up prior to the first lab (where you will be explaining Git and assisting students with setup)
@@ -24,7 +25,7 @@ If you are new to TypeScript, please take some time before the semester begins t
 A lot of the *content* of this course will be similar to what you learned when CISC181 was taught with Java; you should already know OOP.
 To get started...
 1. Check out [this article](https://www.theserverside.com/tutorial/What-Java-developers-need-to-know-about-TypeScript-syntax), which will give you a rundown on transitioning from Java to TypeScript
-2. Read the quick [TypeScript basics](https://github.com/faithlovell/cisc181-ta-intro/blob/main/typescript-intro.md) in this repository
+2. Read the quick [TypeScript basics](./typescript-intro.md) guide in this repository
 3. Read/work through some of the [extra resources](#extra-resources) listed below. You may find some more helpful to you than others, find one that works for you!
 4. Complete the [practice problems](#practice-problems)
 5. Write some tests for your practice problems!
