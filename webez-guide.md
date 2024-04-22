@@ -6,7 +6,7 @@ This guide includes the basic things you need to know while working with WebEZ. 
 - [WebEZ Basics](#webez-basics)
 - [Contents](#contents)
 - [Setting up a WebEZ Project](#setting-up-your-webez-project)
-- [HTMl & CSS](#basic-html--css)
+- [HTML & CSS](#basic-html--css)
     - [HTML](#html)
     - [CSS](#css)
 - [WebEZ Components](#webez-components--file-structure)
@@ -38,6 +38,7 @@ Once you have created your project, you will see a lot of files have been create
 
 ## HTML
 HTML stands for HyperText Markup Language. This is how we display web pages.
+> *Note: Some of the HTML won't display on GitHub. The code is there! Clone this repo, and use your IDE's md preview feature if you'd like to see it.*
 
 ### Tags
 Page elements are all defined using tags:
